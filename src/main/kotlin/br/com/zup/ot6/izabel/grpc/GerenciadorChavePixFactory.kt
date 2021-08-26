@@ -10,5 +10,5 @@ import jakarta.inject.Singleton
 class GerenciadorChavePixFactory(@GrpcChannel("keyManager") val channel: ManagedChannel) {
 
     @Singleton
-    fun cadastraChave() = GerenciadorChavePixGrpcServiceGrpc.newBlockingStub(channel)
+    fun gerenciadorChave() = GerenciadorChavePixGrpcServiceGrpc.newBlockingStub(channel)
 }
