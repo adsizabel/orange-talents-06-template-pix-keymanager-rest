@@ -13,3 +13,7 @@ grpc:
       max-retry-attempts: 10
     keyManager:
       address: '${KEY_MANAGER_HOST:localhost}:${KEY_MANAGER_PORT:50051}'
+
+jackson:
+  serialization:
+    writeDatesAsTimestamps: false
